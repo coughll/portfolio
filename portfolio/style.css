@@ -1,0 +1,128 @@
+body {
+    background-image: url("assets/bckgrnd.png");
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: relative;
+    top: 200px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    text-align: left;
+}
+
+p {
+    position: relative;
+    top: 340px;
+    width: 90%; 
+    margin: auto;
+}
+
+.list {
+    background-color: rgba(150, 150, 150, .6);
+    position: relative;
+    top: 380px;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    font-size: 26px;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+h3:after {
+    content: "";
+    display: inline-block;
+    background: url("assets/arrow.png") no-repeat top right;
+    height: 26px;
+    width: 26px;
+
+}
+
+.portrait {
+    position: absolute;
+    bottom: 440px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin-right: -75px;
+    margin-left: -75px;
+    left: 50%;
+}
+
+.title1{
+    position: absolute;
+    margin-left: 5%;
+    top: 260px;
+    font-size: 26px;
+}
+
+.title2 {
+    position: absolute;
+    margin-left: 5%;
+    top: 290px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 80%;
+    height: 450px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.box1, .box2, .box3 {
+    position: relative;
+    margin-left: 10%;
+    bottom: 450px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    header{
+        top: 40px;
+        margin-left: 5%;
+    }
+    p {
+        width: 75%;
+        margin-right: 20%;
+    }
+    .portrait {
+        bottom: 130px;
+        left: 84%;
+    }
+    .title1 {
+        top: 260px;
+    }
+    .box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100%;
+        width: 25%;
+    }
+}
